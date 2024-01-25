@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="pl">
+
+    </ul>
+    <script>
+        var products = [
+            {
+            "name":"OnePlus Nord CE 3 Lite 5G",
+            "image": "https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/l/7/k/-original-imagtxvur9yrxvru.jpeg?q=70&crop=false"
+            },
+            {
+                "name":"vivo T2 5G",
+                "image":"https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/u/1/h/-original-imagpfbvfu4p55n4.jpeg?q=70&crop=false"
+            }
+    ];
+    var index= 0;
+    var ls="";
+    while(index < products.length)
+    {
+        var product = products[index];
+        ls = ls + "<li>"+product.name+ "<img src= " + product.image + "height='150px' width='150px' > </li>" 
+        index++;
+    };
+    document.getElementById("pl").innerHTML = ls;
+    </script>
+</body>
+</html>
