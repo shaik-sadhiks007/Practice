@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="" size="30px">city</label>
+    <select name="" id="v" onchange="f1()">
+        <option value="select">select</option>
+        <option value="hyd">hyd</option>
+        <option value="jrg">jrg</option>
+        <option value="kgm">kgm</option>
+        <option value="eluru">eluru</option>
+    </select><br><br>
+    <select name="" id="v2">
+
+    </select>
+    <script>
+        function f1(){
+            var val= document.getElementById("v").value
+           var v2= document.getElementById("v2")
+           switch(val)
+           {
+            case 'hyd' : v2.innerHTML = "<option>h</option><option>hy</option>";
+            break;
+            case 'jrg' : v2.innerHTML = "<option>j</option>";
+            break;
+           }
+        }
+      f1();
+    </script>
+</body>
+</html>
